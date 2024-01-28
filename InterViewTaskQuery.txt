@@ -1,0 +1,30 @@
+
+//==========================================
+//Retrieve the top 5 best-selling products
+//===========================================
+select top 5 oItem.prod_id,oItem.qty,oItem.price,p.prod_name from 
+(
+	select  oi.prod_id,sum(oi.qty)as qty,sum(oi.price) as price
+	from orderItem as oi
+	group by oi.prod_id
+)  oItem
+
+	inner join product p on p.Prod_id=oItem.prod_id
+	order by  oItem.qty desc,oItem.price desc;
+	
+	
+// ====================
+// Calculate the total revenue for a specific order.
+//======================
+
+select o.order_id,u.first_name as CustomerName ,o.address_id,a.first_name as oName,a.mobile_no as oMobile,o.grand_total as Total
+from [order] o 
+inner join [user] u on u.user_id=o.user_id
+inner join address a on a.address_id=o.address_id ;	
+
+//=============================
+// Update the customer's address based on their ID.
+//=============================
+
+update address set first_name='Sham2',last_name='Lal',mobile_no='8053240331'
+where address_id='4' and user_id='2'
