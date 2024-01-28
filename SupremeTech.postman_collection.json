@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "e7a43c47-2512-466d-9fd8-9a81cf5fff08",
+		"name": "SupremeTech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15649944"
+	},
+	"item": [
+		{
+			"name": "SaveCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 0,\r\n  \"firstName\": \"Mohan\",\r\n  \"lastName\": \"Lal\",\r\n  \"moblieNo\": \"1234567890\",\r\n  \"emailId\": \"mohan@gmail.com\",\r\n  \"pwd\": \"mohan123#\",\r\n  \"userTypeId\": 2,\r\n  \"createDate\": \"2024-01-27T13:54:29.398Z\",\r\n  \"updateDate\": \"2024-01-27T13:54:29.398Z\",\r\n  \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7150/api/Customer/SaveCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7150",
+					"path": [
+						"api",
+						"Customer",
+						"SaveCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7150/api/Customer/GetCustomer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7150/api/Customer/GetCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7150",
+					"path": [
+						"api",
+						"Customer",
+						"GetCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7150/api/Customer/GetCustomer/6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7150/api/Customer/GetCustomer/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7150",
+					"path": [
+						"api",
+						"Customer",
+						"GetCustomer",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7150/api/Customer/UpdateCustomer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 6,\r\n  \"firstName\": \"MohanUpdate\",\r\n  \"lastName\": \"LalUpdate\",\r\n  \"moblieNo\": \"2345678952\",\r\n  \"emailId\": \"MohanLal@gmail.com\",\r\n  \"pwd\": \"Mohan123#\",\r\n  \"userTypeId\": 2,\r\n  \"createDate\": \"2024-01-27T14:01:35.464Z\",\r\n  \"updateDate\": \"2024-01-27T14:01:35.464Z\",\r\n  \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7150/api/Customer/UpdateCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7150",
+					"path": [
+						"api",
+						"Customer",
+						"UpdateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7150/api/Customer/DeleteCustomer/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7150/api/Customer/DeleteCustomer/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7150",
+					"path": [
+						"api",
+						"Customer",
+						"DeleteCustomer",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7150/api/Product/SaveProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"prodId\": 0,\r\n  \"prodName\": \"Avatar Leather Strap Quartz Operated Analog Watch\",\r\n  \"sku\": \"ALSQ\",\r\n  \"description\": \"Avatar Leather Strap Quartz Operated Analog Watch\",\r\n  \"qty\": 1,\r\n  \"price\": 267,\r\n  \"discount\": 0,\r\n  \"createdDate\": \"2024-01-27T14:08:20.445Z\",\r\n  \"updateDate\": \"2024-01-27T14:08:20.445Z\",\r\n  \"isActive\": true,\r\n  \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7150/api/Product/SaveProduct",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7150",
+					"path": [
+						"api",
+						"Product",
+						"SaveProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7150/api/Product/GetProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7150/api/Product/GetProduct",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7150",
+					"path": [
+						"api",
+						"Product",
+						"GetProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7150/api/Product/GetProduct/29",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7150/api/Product/GetProduct/29",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7150",
+					"path": [
+						"api",
+						"Product",
+						"GetProduct",
+						"29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7150/api/Product/UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"prodId\": 29,\r\n  \"prodName\": \"Avatar Leather Strap Quartz Operated Analog WatchUpdate\",\r\n  \"sku\": \"ALSQ\",\r\n  \"description\": \"Avatar Leather Strap Quartz Operated Analog WatchUpdate\",\r\n  \"qty\": 1,\r\n  \"price\": 267,\r\n  \"discount\": 0,\r\n  \"createdDate\": \"2024-01-27T14:18:45.221Z\",\r\n  \"updateDate\": \"2024-01-27T14:18:45.221Z\",\r\n  \"isActive\": true,\r\n  \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7150/api/Product/UpdateProduct",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7150",
+					"path": [
+						"api",
+						"Product",
+						"UpdateProduct"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
